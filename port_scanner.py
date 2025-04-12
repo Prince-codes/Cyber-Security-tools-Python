@@ -1,3 +1,5 @@
+# Description: A simple multi-threaded port scanner in Python.
+
 import socket
 import threading
 

@@ -1,4 +1,5 @@
- #This is only for educational Purpose, it can lead to ©yber©rime use it on your own risk, if you are found guilty I'll Just Laugh At You. 🙂
+# This is a simple ddos script
+#This is only for educational Purpose, it can lead to ©yber©rime use it on your own risk, if you are found guilty I'll Just Laugh At You. 🙂
 
 
 
