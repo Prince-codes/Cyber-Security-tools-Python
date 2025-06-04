@@ -1,3 +1,4 @@
+# Program to rename the files
 import os
 
 def rename_files_in_series(folder_path, base_name):
