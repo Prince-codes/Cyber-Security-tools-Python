@@ -1,32 +1,33 @@
 <h1 align="center">🔐 Cyber Security Tools in Python 🔐</h1>
 <p align="center">
-  <b>A curated collection of simple yet powerful cybersecurity scripts for research and educational purposes.</b>
+  <b>A collection of simple cybersecurity scripts for research and educational purposes. Use responsibly.</b>
 </p>
 
 <hr>
 
 <h2>📂 <b>Contents</b></h2>
 <ul>
-  <li><a href="#ddospy"><b>ddos.py</b></a> - Simple DDoS Attack Script</li>
-  <li><a href="#portscannerpy"><b>port_scanner.py</b></a> - Multithreaded Port Scanner</li>
-  <li><a href="#xpy"><b>x.py</b></a> - Batch File Creator</li>
-  <li><a href="#x1py"><b>x1.py</b></a> - Mass File Renamer</li>
+  <li><a href="#ddospy"><b>ddos.py</b></a> - Denial of Service (DoS) Attack Script</li>
+  <li><a href="#portscannerpy"><b>port_scanner.py</b></a> - Multi-threaded Port Scanner</li>
+  <li><a href="#webstresstestingpy"><b>web-stress-testing.py</b></a> - Web Server Stress Test</li>
+  <li><a href="#createmultifilespy"><b>create_multiple-files.py</b></a> - Batch File Creator</li>
+  <li><a href="#renamemultifilespy"><b>rename_multiple-files.py</b></a> - Batch File Renamer</li>
 </ul>
 
 <hr>
 
 <h2 id="ddospy">💥 <b>ddos.py</b></h2>
 <ul>
-  <li><b>Description:</b> A basic Denial-of-Service (DoS) attack script for <b>educational use only</b>. It sends a large number of requests to the target server/IP.</li>
+  <li><b>Description:</b> A basic Denial-of-Service (DoS) attack script for <b>educational use only</b>. Sends a large number of packets to a target IP and port.</li>
   <li><b>Features:</b>
     <ul>
-      <li>Randomizes user agents and headers to simulate different clients.</li>
-      <li>Multi-threaded attack using user-defined number of threads and packets.</li>
+      <li>Randomizes user agents and headers.</li>
+      <li>Multi-threaded attack with user-defined threads and packets.</li>
       <li>Customizable target IP, port, and packet count.</li>
     </ul>
   </li>
-  <li><b>Usage:</b> <i>python ddos.py</i> (You will be prompted for target info.)</li>
-  <li><b>⚠️ Note:</b> <i>This script is for educational purposes only. Illegal use is prohibited.</i></li>
+  <li><b>Usage:</b> <code>python ddos.py</code> (You will be prompted for target info.)</li>
+  <li><b>⚠️ Note:</b> <i>For educational purposes only. Illegal use is prohibited.</i></li>
 </ul>
 
 <hr>
@@ -37,41 +38,43 @@
   <li><b>Features:</b>
     <ul>
       <li>Resolves domain names to IP addresses.</li>
-      <li>Scans user-defined port ranges quickly using threads.</li>
+      <li>Scans user-defined port ranges using threads.</li>
       <li>Identifies and lists open ports.</li>
     </ul>
   </li>
-  <li><b>Usage:</b> <i>python port_scanner.py</i> (Input the target and port range when prompted.)</li>
+  <li><b>Usage:</b> <code>python port_scanner.py</code> (Input the target and port range when prompted.)</li>
 </ul>
 
 <hr>
 
-<h2 id="xpy">📄 <b>x.py</b></h2>
+<h2 id="webstresstestingpy">🌐 <b>web-stress-testing.py</b></h2>
 <ul>
-  <li><b>Description:</b> Simple script to create multiple files in series, useful for batch file generation (here, C files).</li>
+  <li><b>Description:</b> Demonstrates multi-threaded TCP connection attempts to a target IP and port. Each thread repeatedly sends a simple HTTP GET request. Useful for learning about threading and sockets in Python, or for stress testing a web server.</li>
+  <li><b>Usage:</b> <code>python web-stress-testing.py</code> (You will be prompted for target IP, port, and number of threads.)</li>
   <li><b>Features:</b>
     <ul>
-      <li>Creates files named <b>program_1.c, program_2.c, ...</b> based on user input.</li>
+      <li>Prompts user for target IP, port, and thread count.</li>
+      <li>Spawns multiple threads, each making repeated TCP connections and sending HTTP requests.</li>
+      <li>Handles connection errors gracefully.</li>
     </ul>
   </li>
-  <li><b>Usage:</b> <i>python x.py</i> (Enter the number of files to create.)</li>
 </ul>
 
 <hr>
 
-<h2 id="x1py">📝 <b>x1.py</b></h2>
+<h2 id="createmultifilespy">📄 <b>create_multiple-files.py</b></h2>
+<ul>
+  <li><b>Description:</b> Script to create multiple files at once. Useful for batch file generation or testing.</li>
+  <li><b>Usage:</b> <code>python create_multiple-files.py</code></li>
+</ul>
+
+<hr>
+
+<h2 id="renamemultifilespy">📝 <b>rename_multiple-files.py</b></h2>
 <ul>
   <li><b>Description:</b> Batch renamer script to rename all files in a specified folder with a new base name and sequential numbering.</li>
-  <li><b>Features:</b>
-    <ul>
-      <li>Reads all files in a folder and renames starting from a specified index (default: 26).</li>
-      <li>Maintains file extensions and applies a new base name (e.g., program_26.c, program_27.c, ...).</li>
-    </ul>
-  </li>
-  <li><b>Usage:</b> <i>python x1.py</i> (Edit <b>folder_path</b> and <b>base_name</b> as needed in the script.)</li>
+  <li><b>Usage:</b> <code>python rename_multiple-files.py</code></li>
 </ul>
-
-<hr>
 
 <h2>🚨 <b>Disclaimer</b></h2>
 <p>
